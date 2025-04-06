@@ -1,230 +1,106 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouHealthier2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .site-header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        .main-navigation {
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-            padding: 0;
-        }
-
-        .main-navigation li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .slider {
-            margin-top: 60px; /* Push the slider below the menu */
-        }
-
-        .slider img {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-        }
-
-        .slider h2 {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 24px;
-        }
-
-        h1.header-txt {
-            text-align: center;
-            margin-top: 80px;
-            font-weight: bold;
-            font-style: italic;
-        }
-
-        .about-content,
-        .product-list,
-        footer {
-            margin: 50px 0;
-        }
-
-        .product-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .product-item {
-            width: 30%;
-            margin-bottom: 20px;
-            background: white;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .product-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        footer p {
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .cd-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #333;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 50%;
-            text-decoration: none;
-            display: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouHealthier – Natural Supplements</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="container">
-            <nav>
-                <ul class="main-navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about-us">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#contact-us">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <img src="assets/logo/youhealthier-logo.png" alt="YouHealthier Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="slider">
-        <div><img src="assets/img/Red_and_Black_Maca2.jpg" alt="Black and Red Maca"><h2>Black and Red Maca - Boost Your Energy Naturally</h2></div>
-        <div><img src="assets/img/Quinoa.jpeg" alt="Quinoa"><h2>Quinoa - A Superfood Rich in Protein and Fiber</h2></div>
-        <div><img src="assets/img/GOLDENBERRY.jpeg" alt="Goldenberry"><h2>Goldenberry - Packed with Antioxidants</h2></div>
-        <div><img src="assets/img/CAMU_CAMU.jpeg" alt="Camu Camu"><h2>Camu Camu - High in Vitamin C for Immune Support</h2></div>
-        <div><img src="assets/img/PURPLE_CORN.jpeg" alt="Purple Corn"><h2>Purple Corn - Rich in Antioxidants for Heart Health</h2></div>
+  <section class="hero">
+    <img src="assets/banner/youhealthier-banner.jpg" alt="YouHealthier Banner" />
+    <div class="hero-text">
+      <h1>Your health, a reflection of your nutrition.</h1>
+      <p>Empowering wellness through natural superfoods.</p>
+      <a href="#products" class="cta">Shop Now</a>
     </div>
+  </section>
 
-    <section id="about-us">
-        <div class="container about-content">
-            <h1><strong>Reflect your health through the power of good nutrition</strong></h1>
-            <p>We are honored to offer you 100% organic, natural products provided by the ancient and blessed Mother Earth. Our authentic, preservative-free, gluten-free, non-GMO foods and supplies are crafted to nourish your body and support a healthier, more balanced lifestyle.</p>
-            <p>Let’s embrace vitality and well-being by consuming the pure, natural gifts that Mother Earth has offered us for millennia.</p>
-            <img src="assets/img/3D_purple_corn_quinoa_maca_goldenberries.jpg" alt="About YouHealthier2" style="width: 100%; height: auto;">
-        </div>
-    </section>
+  <section id="products" class="products">
+    <h2>Our Superfoods</h2>
+    <div class="product-grid">
 
-    <section id="products">
-        <div class="container">
-            <h1 class="header-txt">Our Products</h1>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="assets/img/Red_and_Black_Maca2.jpg" alt="Black and Red Maca">
-                    <h2>Black and Red Maca</h2>
-                    <p>Boosts stamina, energy, and supports hormonal balance.</p>
-                </div>
-                <div class="product-item">
-                    <img src="assets/img/Quinoa.jpeg" alt="Quinoa">
-                    <h2>Quinoa</h2>
-                    <p>Rich in protein, fiber, and essential amino acids.</p>
-                </div>
-                <div class="product-item">
-                    <img src="assets/img/GOLDENBERRY.jpeg" alt="Goldenberry">
-                    <h2>Goldenberry</h2>
-                    <p>Packed with antioxidants, supports digestion and eye health.</p>
-                </div>
-                <div class="product-item">
-                    <img src="assets/img/CAMU_CAMU.jpeg" alt="Camu Camu">
-                    <h2>Camu Camu</h2>
-                    <p>High in Vitamin C, strengthens immune system.</p>
-                </div>
-                <div class="product-item">
-                    <img src="assets/img/PURPLE_CORN.jpeg" alt="Purple Corn">
-                    <h2>Purple Corn</h2>
-                    <p>Rich in antioxidants, promotes heart health and reduces inflammation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      <!-- Sample Product Card -->
+      <div class="product">
+        <img src="assets/product-images/maca-negra.jpg" alt="Maca Negra" />
+        <h3>Maca Negra</h3>
+        <p>Boosts energy and stamina.</p>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <p class="extra-info">Sourced from the Andes, known for enhancing vitality, mental clarity, and overall endurance.</p>
+        <span>$14.99</span>
+      </div>
 
-    <footer id="contact-us">
-        <div class="container">
-            <h1 class="header-txt" style="font-weight: bold; font-size: 32px;">Contact</h1>
-            <p style="font-weight: bold; font-size: 20px;">Email: contact@youhealthier.com | Phone: +01 562-555-0114</p>
-        </div>
-    </footer>
+      <div class="product">
+        <img src="assets/product-images/maca-roja.jpg" alt="Maca Roja" />
+        <h3>Maca Roja</h3>
+        <p>Supports hormone balance and endurance.</p>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <p class="extra-info">Helps balance hormones, supports female wellness, and increases stamina naturally.</p>
+        <span>$14.99</span>
+      </div>
 
-    <a href="#" class="cd-top">⇑ Top</a>
+      <div class="product">
+        <img src="assets/product-images/maca-mix.jpg" alt="Maca Mix" />
+        <h3>Maca Mix</h3>
+        <p>The perfect blend of red and black maca.</p>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <p class="extra-info">Combination of red and black maca for balanced benefits — stamina, hormones, and vitality.</p>
+        <span>$16.99</span>
+      </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                infinite: true,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                arrows: false,
-                fade: true,
-                cssEase: 'linear'
-            });
+      <div class="product">
+        <img src="assets/product-images/camu-camu.jpg" alt="Camu Camu" />
+        <h3>Camu-Camu</h3>
+        <p>Vitamin C powerhouse for immune support.</p>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <p class="extra-info">One of the highest vitamin C sources on Earth. Strengthens immunity and skin health.</p>
+        <span>$12.99</span>
+      </div>
 
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('.cd-top').fadeIn();
-                } else {
-                    $('.cd-top').fadeOut();
-                }
-            });
+      <div class="product">
+        <img src="assets/product-images/goldenberry.jpg" alt="Goldenberry" />
+        <h3>Goldenberry</h3>
+        <p>Rich in antioxidants and great for digestion.</p>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <p class="extra-info">Tart, golden, and rich in fiber and antioxidants. Supports digestion and blood sugar levels.</p>
+        <span>$13.99</span>
+      </div>
 
-            $('.cd-top').click(function () {
-                $('html, body').animate({ scrollTop: 0 }, 600);
-                return false;
-            });
-        });
-    </script>
+      <div class="product">
+        <img src="assets/product-images/purple-corn.jpg" alt="Purple Corn" />
+        <h3>Purple Corn</h3>
+        <p>Promotes healthy circulation and metabolism.</p>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <p class="extra-info">Contains anthocyanins for heart and blood vessel health. A colorful boost for circulation.</p>
+        <span>$11.99</span>
+      </div>
+
+      <div class="product">
+        <img src="assets/product-images/quinoa.jpg" alt="Tri-color Quinoa" />
+        <h3>Tri-color Quinoa</h3>
+        <p>A complete plant-based protein.</p>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <p class="extra-info">Red, black, and white quinoa mix — rich in fiber, iron, and amino acids.</p>
+        <span>$10.99</span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 YouHealthier. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>
